@@ -1,0 +1,29 @@
+#include<iostream>
+int main()
+
+{
+    int a,b,c,d,e,f,g;
+    a=5;
+    b=3;
+    c=a+b;
+    {
+    std::cout<<"c=" <<c;
+}
+     d=a-b;
+     {
+    std::cout<<"d=" <<d;
+}
+    e=a*b;
+    {
+    std::cout<<"e=" <<e;
+}
+     f=a/b;
+     {
+    std::cout<<"f=" <<f;
+}
+    g=a%b;
+    {
+   std::cout<<"g=" <<g;
+}
+    return 0;
+}
