@@ -1,0 +1,26 @@
+#include<iostream>
+int main()
+{
+	int a,b,c,d;
+	a=8;
+	b=5;
+	c=56;
+	d=30;
+	if(a>b && a>c && a>d)
+	{
+		std::cout<<"a is greater";
+	}
+	else if(b>a && b>c && b>d)
+	{
+	std::cout<<"b is greater";
+	}
+	else if(c>a && c>b && c>d)
+	{
+		std::cout<<"c is greater";
+	}
+	else
+	{
+		std::cout<<"d is greater";
+	}
+	return 0;
+}
