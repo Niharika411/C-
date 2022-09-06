@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+void add(int a,int b)
+{
+	int c=a+b;
+	cout<<c<<endl;
+}
+void add(double d,double e)
+{
+	float f=d+e;
+	cout<<f<<endl;
+}
+int main()
+{
+ add(1,2);
+ add(3.0,4.0);
+ return 0;
+}
