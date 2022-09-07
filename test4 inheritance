@@ -1,0 +1,45 @@
+#include<iostream>
+using namespace std;
+class base1
+{
+	public:
+		a()
+		{
+			cout<<"a"<<endl;
+		}
+};
+class base2
+{
+	public:
+		b()
+		{
+			cout<<"b"<<endl;
+		}
+};
+class derived1:public base1
+{
+	public:
+		c()
+		{
+			cout<<"c"<<endl;
+		}
+};
+class derived2:public base1,public base2
+{
+	public:
+	d()
+	{
+		cout<<"d"<<endl;
+	}
+};
+int main()
+{
+	derived1 obj1;
+	derived2 obj2;
+	obj1.a();
+	obj1.c();
+	obj2.a();
+	obj2.b();
+	obj2.d();
+	return 0;
+}
