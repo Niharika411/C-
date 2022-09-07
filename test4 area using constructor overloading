@@ -1,0 +1,48 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+class AreaShape
+{
+    float area;
+  public:
+    AreaShape(float radius)
+    {
+        area = 3.14 * radius * radius;
+    }
+    AreaShape(int side)
+    {
+        area = side * side;
+    }
+    AreaShape(float base, float height)
+    {
+        area = 0.5 * (base * height);
+    }
+    void display()
+    {
+        cout << "Area:\t" << area << endl;
+    }
+};
+int main()
+{
+    float radius, height, base;
+    int side;
+    {
+            cout << "Enter Radius of the Circle:\t";
+            cin >> radius;
+            AreaShape area(radius);
+            area.display();
+    }
+    {
+            cout << "Enter side of the square:\t";
+            cin >> side;
+            AreaShape area(side);
+            area.display();
+   }
+   {
+            cout << "Enter Base and Height of the Triangle:\t";
+            cin >> base >> height;
+            AreaShape area(base, height);
+            area.display();
+    }
+    return 0;
+}
