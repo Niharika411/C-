@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+class Area
+{
+	public:
+		void output(int L,int B)
+		{
+			cout<<" Area of Rectangle:"<<L*B<<endl;
+		}
+		void output(int s)
+		{
+			cout<<" Area of Sqaure:"<<s*s<<endl;
+		}
+};
+int main()
+{
+	Area obj;
+	obj.output(2,8);
+	obj.output(8);
+	return 0;
+}
